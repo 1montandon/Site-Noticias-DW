@@ -21,19 +21,30 @@ nav{
     justify-items: center;
     align-items: center;
     height: 120px;
+    transition: 250ms;
 }
-nav > div{
-    display: inline; 
+nav:hover{
+    height: 135px;
 }
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     align-items: center;
     text-align: center;
+    column-gap: 20px;
+    
+}
+.container2 {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
     
 }
 .icon{
-    transition-duration: 5ms;
+    transition-duration: 200ms;
 }
 .icon:hover{
     cursor: pointer;
@@ -44,5 +55,6 @@ nav > div{
     background-color: blueviolet;
     height: 40px;
     box-shadow: 0px 5px rgb(67, 24, 107);
+    transition: 150ms;
 
 }
