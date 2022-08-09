@@ -10,18 +10,30 @@
 </head>
 
 <body>
-    <header>
+    <div id="sidebar">
+        <ul> 
+            <div> <li id="closebtn" onclick="remove()">&times;</li> </div>
+            <div><li>Teste1</li></div>
+            <div><li>Teste2</li></div>
+            <div><li>Teste3</li></div>
+            <div><li>Teste4</li></div>
+        </ul>
+    </div>
+    <header >
         <nav> 
-            <div> OI OI </div>
+            <div class="btn-menu"  onclick="show()" >  
+                <div> 
+                <span id="span-no-margin"></span> 
+                <span></span> 
+                <span></span> 
+                </div>
+                Menu 
+            </div>
             <div> <img class="icon" href="index.html" src="mnews-removebg-preview.png" alt="" height="70"> </div>
-            <div> OI OI </div>
+            <div></div>
         </nav>
         <div class="bottomheader"> 
-            <div class="container">
-                <div style="text-align: right;">TOPICO 1</div>
-                <div>TOPICO 2</div>
-                <div style="text-align: left;">TOPICO 3</div>
-            </div>
+
         </div>
     </header>
     <div class="container2">
@@ -29,6 +41,7 @@
         <p>Cristano Ronaldo encontrado em piscina no interior do ceara</p></div>
         
     </div>
-</body>
 
+</body>
+<script src="menu.js"></script>
 </html>

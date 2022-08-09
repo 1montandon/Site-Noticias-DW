@@ -1,4 +1,5 @@
 *{
+    padding: 0px;
     margin: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -26,14 +27,6 @@ nav{
 nav:hover{
     height: 135px;
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    align-items: center;
-    text-align: center;
-    column-gap: 20px;
-    
-}
 .container2 {
     margin-top: 15px;
     display: grid;
@@ -53,8 +46,75 @@ nav:hover{
     display: grid;
     grid-template-columns: 1fr;
     background-color: blueviolet;
-    height: 40px;
+    height: 20px;
     box-shadow: 0px 5px rgb(67, 24, 107);
-    transition: 150ms;
+}
+.btn-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+.btn-menu > div{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 100%;
+}
+span{
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin-top: 4px;
+    display: block; 
+}
+#span-no-margin{
+    margin-top: 0px;
+}
+#sidebar{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: blueviolet;
+    left: -500px;
+    transition: .4s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 64px;
+    box-shadow: 5px 5px rgb(67, 24, 107);
+}
+#sidebar.active{
+    left: 0;
+}
+#sidebar ul li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+
+#sidebar .btn-menu {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+#sidebar div{
+    background-color: blueviolet;
+    transition: .2s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
+#sidebar div:hover{
+    background-color: rgb(67, 24, 107);
+    cursor: pointer;
+}
+
+#sidebar #closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
