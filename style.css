@@ -27,10 +27,11 @@ nav{
 nav:hover{
     height: 135px;
 }
+
 .container2 {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
     column-gap: 20px;
@@ -118,3 +119,19 @@ span{
     font-size: 36px;
     margin-left: 50px;
   }
+img{
+    padding: 6px;
+    width: 100%;
+    border-radius: 25px;
+}
+.testando > p{
+    margin-top: -50px;
+    display: none;
+    opacity: 0%;
+    transition: .4s;
+}
+.testando:hover > p{
+    margin-top: -50px;
+    opacity: 100%;
+    display: grid;
+}
