@@ -1,83 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <!DOCTYPE html>
-    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href ="mnews.png" type = "image/x-icon">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meu Site</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body class="body">
-            <div id="sidebar">
-                <ul>
-                    <div>
-                        <li id="closebtn" onclick="remove()">&times;</li>
-                    </div>
-                    <div>
-                        <li>Teste1</li>
-                    </div>
-                    <div>
-                        <li>Teste2</li>
-                    </div>
-                    <div>
-                        <li>Teste3</li>
-                    </div>
-                    <div>
-                        <li>Teste4</li>
-                    </div>
-                    <div class="info">
-                        <li>info</li>
-                    </div>
-                </ul>
+<body class="body">
+    <div id="sidebar">
+        <ul>
+            <div>
+                <li id="closebtn" onclick="remove()">&times;</li>
             </div>
-            <header>
-                <nav class="nav">
-                    <div class="btn-menu" onclick="show()">
-                        <div id="span">
-                            <span id="span-no-margin"></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        Menu
-                    </div>
-                    <div> <img class="icon" href="index.html" src="mnews-removebg-preview.png" alt="" height="70"> </div>
-                    <div></div>
-                </nav>
-                    <div class="bottomheader"></div>
-                </header>
-            <main> 
-            <div class="container2">
-                <div></div>
-                <div class="containerGrande" >
-                    <div class="testando xxxxx">
-                        <img class="image" src="messi foi em cana.png">
+            <div>
+                <a href="PaginaTemaUm.html">
+                    <li>Messi Preso </li>
+                </a>
+            </div>
+            <div>
+                <a href="PaginaTemaDois.html">
+                    <li>Cristiano Ronaldo no Ceara </li>
+                </a>
+            </div>
+            <div>
+                <a href="PaginaTemaTres.html">
+                    <li>Neymar da massa </li>
+                </a>
+            </div>
+        </ul>
+    </div>
+    <header>
+        <nav class="nav">
+            <div class="btn-menu" onclick="show()">
+                <div id="span">
+                    <span id="span-no-margin"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                Menu
+            </div>
+            <div> <a href="index.html"><img class="icon" src="mnews-removebg-preview.png" alt="" height="70"> </a>
+            </div>
+            <div></div>
+        </nav>
+        <div class="bottomheader"></div>
+    </header>
+    <main>
+        <h1 class="titulo2">Principais Noticias</h1>
+        <h2 class="subtitulo">as mais recentes e importantes noticias do futebol!</h2>
+        <div class="container2">
+            <div></div>
+            <div class="containerGrande">
+                <div class="testando xxxxx">
+                    <a href="PaginaTemaUm.html"><img class="image" src="910945-19904676-2560-1440.jpg">
                         <h1>Messi Preso</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae temporibus ipsa voluptatem in magnam non consectetur, ducimus enim modi alias minima excepturi maxime, ipsum iure laborum dolorum necessitatibus molestiae illum.</p>
-                    </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Quae temporibus ipsa voluptatem in magnam non consectetur,
+                            ducimus enim modi alias minima excepturi maxime, ipsum iure laborum dolorum
+                            necessitatibus molestiae illum.</p>
+                    </a>
                 </div>
-                <div class="containerPequenoDuplo">
-                    <div class="testando2 xxxxx2">
-                        <img class="image" src="cr7-bebendo-com-morador_Easy-Resize.com_.jpg">
-                        <p>Cristano Ronaldo encontrado em piscina no interior do ceara</p>
-                    </div>
-                    <div class="testando3 xxxxx3">
-                        <img class="image" src="cr7-bebendo-com-morador_Easy-Resize.com_.jpg">
-                        <p>Cristano Ronaldo encontrado em piscina no interior do ceara</p>
-                    </div>
-                </div>
-                <div></div>
             </div>
-            </main>
-
-            <footer>    
-                <div class="footer">
-                    <p>pr</p>
+            <div class="containerPequenoDuplo">
+                <div class="testando2 xxxxx2">
+                    <a href="PaginaTemaTres.html"><img class="image" src="neymar-no-atletico-mineiro-galo.png">
+                    <p>Neymar em negociação com clube atletico mineiro</p></a>
                 </div>
-            </footer>
-    </body>
-    <script src="menu.js"></script>
+                <div class="testando3 xxxxx3">
+                    <a href="PaginaTemaDois.html"><img class="image" src="cr7-bebendo-com-morador_Easy-Resize.com_.jpg">
+                        <p>Cristano Ronaldo encontrado em piscina no interior do ceara</p>
+                    </a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </main>
 
-    </html>
+    <footer>
+        <div class="footer">
+            <a href="index.html"><img class="icon2" href="index.html" src="mnews-removebg-preview.png" alt=""></a>
+            <p>© 2022 - 2022. Todos direitos reservados a Montandon CO. Este material não pode ser publicado,
+                transmitido por broadcast, reescrito ou redistribuído sem autorização.</p>
+        </div>
+    </footer>
+</body>
+<script src="menu.js"></script>
+
+</html>
